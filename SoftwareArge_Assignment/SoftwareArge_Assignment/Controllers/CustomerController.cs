@@ -50,7 +50,7 @@ namespace SoftwareArge_Assignment.Controllers
 
 
         [HttpGet("{id}")]
-
+        [Authorize]
         //get customer with id
         public JsonResult GetCustomerWId(int id)
         {
@@ -83,10 +83,11 @@ namespace SoftwareArge_Assignment.Controllers
         }
 
 
-        [HttpPost]
+        [HttpPost,Route("add")]
+        [Authorize]
 
         //Add customer
-        public JsonResult PostCustomer(Customer cstmr)
+        public JsonResult PostCustomer([FromBody] Customer cstmr)
         {
             string query = @"exec add_customer
                     '" + cstmr.Name + @"',
@@ -94,7 +95,7 @@ namespace SoftwareArge_Assignment.Controllers
                     '" + cstmr.Phone + @"',
                     '" + cstmr.EmailAdress + @"',
                     '" + cstmr.City + @"',
-                    '" + cstmr.Town + @"',
+                    '" + cstmr.State + @"',
                     '" + cstmr.Adress + @"'
                 ";
             DataTable table = new DataTable();
@@ -117,8 +118,8 @@ namespace SoftwareArge_Assignment.Controllers
         }
 
 
-        [HttpPut("{id}")]
-
+        [HttpPut,Route("update/{id}")]
+        [Authorize]
         //Update customer
         public JsonResult PutCustomer(int id,Customer customer)
         {
@@ -127,7 +128,7 @@ namespace SoftwareArge_Assignment.Controllers
                     '" + customer.Phone + @"',
                     '" + customer.EmailAdress + @"',
                     '" + customer.City + @"',
-                    '" + customer.Town + @"',
+                    '" + customer.State + @"',
                     '" + customer.Adress + @"'
                 ";
             DataTable table = new DataTable();

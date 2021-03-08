@@ -11,6 +11,10 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { CustomerComponent } from './customer/customer.component';
 import { LoginComponent } from './login/login.component';
 import {JwtModule} from '@auth0/angular-jwt';
+import { CustomerDetailsComponent } from './customer-details/customer-details.component';
+import { FooterComponent } from './footer/footer.component';
+import { CustomerUpdateComponent } from './customer-update/customer-update.component';
+import { CreateCustomerComponent } from './create-customer/create-customer.component';
 
 export function tokenGetter(){
   return localStorage.getItem("jwt");
@@ -21,7 +25,11 @@ export function tokenGetter(){
     AppComponent,
     HomeComponent,
     CustomerComponent,
-    LoginComponent
+    LoginComponent,
+    CustomerDetailsComponent,
+    FooterComponent,
+    CustomerUpdateComponent,
+    CreateCustomerComponent
   ],
   imports: [
     BrowserModule,

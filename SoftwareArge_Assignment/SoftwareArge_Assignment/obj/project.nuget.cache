@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pwfYujpP8vr1CcxrGIcMRu1xmTmGNvFXaZfkHaT20ojQS431gIl1sTk0MDfR7fVcc1R4gTBfMge72dqjvC1OSA==",
+  "dgSpecHash": "3SllifmOkrYZFKAIneW06OJMgLtbHZezvmDxl54tJnijH0aEycrhFPOkU2iYgfbFNzGHKn+GX5NKrM241en7hQ==",
   "success": true,
-  "projectFilePath": "D:\\SoftwareArge-\\Asp.Net-Core-ve-Angular.js-ile-musteri-paneli-web-uygulamasi\\SoftwareArge_Assignment\\SoftwareArge_Assignment\\SoftwareArge_Assignment.csproj",
+  "projectFilePath": "D:\\Software_Arge_\\Asp.net-core-ve-angular.js-ile-web-uygulamasi\\SoftwareArge_Assignment\\SoftwareArge_Assignment\\SoftwareArge_Assignment.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.12\\microsoft.aspnetcore.authentication.jwtbearer.3.1.12.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.12\\microsoft.aspnetcore.jsonpatch.3.1.12.nupkg.sha512",

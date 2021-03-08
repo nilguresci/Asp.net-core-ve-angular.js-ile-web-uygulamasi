@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Customer } from '../models/Customer';
 import { DotnetcoreService} from '../services/dotnetcore.service'
 
 @Component({
@@ -8,9 +10,11 @@ import { DotnetcoreService} from '../services/dotnetcore.service'
 })
 export class CustomerComponent implements OnInit {
 
-  constructor(private service:DotnetcoreService) { }
-  CustomerList:any=[]
+  constructor(private service:DotnetcoreService,private router:Router) { }
+  CustomerList:Customer[]=[];
+
   ngOnInit(): void {
+   
     this.refreshCustomerList();
   }
 
@@ -18,6 +22,14 @@ export class CustomerComponent implements OnInit {
       this.service.getCustomerList().subscribe((data: any) => {
         this.CustomerList=data;
       });
+    }
+
+    getCustomerWId(Id:number){
+      this.router.navigate([`/customer/${Id}`]);
+    }
+
+    goUpdate(Id:number){
+      this.router.navigate([`/customer/update/${Id}`]);
     }
 
 }

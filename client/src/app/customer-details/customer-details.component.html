@@ -1,0 +1,35 @@
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <br />
+                <div class="card" style="width: 18rem">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            {{ customer.Name }} {{ customer.Surname }}
+                        </h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Phone number: 0{{ customer.Phone }}</li>
+                        <li class="list-group-item">
+                            Email adress: {{ customer.EmailAdress }}
+                        </li>
+                        <li class="list-group-item">City: {{ customer.City }}</li>
+                        <li class="list-group-item">State: {{ customer.State }}</li>
+                        <li class="list-group-item">Adress: {{ customer.Adress }}</li>
+                    </ul>
+                    <div class="card-body">
+                        <button type="button" class="btn btn-link" (click)="goUpdate(customer.Id)">
+              Update
+            </button>
+                        <button type="button" class="btn btn-link" (click)="deleteCustomer(customer.Id)">
+              Delete
+            </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</div>

@@ -11,12 +11,13 @@ import { JwtHelperService } from '@auth0/angular-jwt';
 export class AppComponent {
   title = 'client';
   constructor(private router:Router, private jwtHelper:JwtHelperService){}
-
+  kontrol:boolean=false;
   isUserAuthenticated(){
 
     const token: string=JSON.parse(localStorage.getItem("jwt") || '{}');
 
     if(token && !this.jwtHelper.isTokenExpired(token)){
+      this.kontrol=true;
       return true;
     }else {
       return false;

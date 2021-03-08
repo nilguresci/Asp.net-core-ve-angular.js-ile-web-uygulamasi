@@ -980,11 +980,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SoftwareArge-\\Asp.Net-Core-ve-Angular.js-ile-musteri-paneli-web-uygulamasi\\SoftwareArge_Assignment\\SoftwareArge_Assignment\\SoftwareArge_Assignment.csproj",
+      "projectUniqueName": "D:\\Software_Arge_\\Asp.net-core-ve-angular.js-ile-web-uygulamasi\\SoftwareArge_Assignment\\SoftwareArge_Assignment\\SoftwareArge_Assignment.csproj",
       "projectName": "SoftwareArge_Assignment",
-      "projectPath": "D:\\SoftwareArge-\\Asp.Net-Core-ve-Angular.js-ile-musteri-paneli-web-uygulamasi\\SoftwareArge_Assignment\\SoftwareArge_Assignment\\SoftwareArge_Assignment.csproj",
+      "projectPath": "D:\\Software_Arge_\\Asp.net-core-ve-angular.js-ile-web-uygulamasi\\SoftwareArge_Assignment\\SoftwareArge_Assignment\\SoftwareArge_Assignment.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\SoftwareArge-\\Asp.Net-Core-ve-Angular.js-ile-musteri-paneli-web-uygulamasi\\SoftwareArge_Assignment\\SoftwareArge_Assignment\\obj\\",
+      "outputPath": "D:\\Software_Arge_\\Asp.net-core-ve-angular.js-ile-web-uygulamasi\\SoftwareArge_Assignment\\SoftwareArge_Assignment\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

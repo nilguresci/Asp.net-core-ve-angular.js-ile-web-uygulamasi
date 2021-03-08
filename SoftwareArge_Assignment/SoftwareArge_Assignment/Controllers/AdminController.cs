@@ -28,7 +28,7 @@ namespace SoftwareArge_Assignment.Controllers
         }
         [HttpPost,Route("login")]
 
-        public IActionResult Login([FromBody]Admin admin)
+        public IActionResult Login([FromBody] Admin admin)
         {
             if (admin == null)
                 return BadRequest("Invalid  client request");

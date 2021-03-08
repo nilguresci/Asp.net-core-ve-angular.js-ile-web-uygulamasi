@@ -1,0 +1,39 @@
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <br />
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="FormControlTel">Telefon</label>
+                        <input type="tel" id="exampleInputTel" class="form-control" placeholder="xxx xxx xx xx" [(ngModel)]="customer.Phone" required pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" name="customer.Phone" />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" [(ngModel)]="customer.EmailAdress" name="customer.EmailAdress" />
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" [(ngModel)]="customer.Adress" name="customer.Adress" />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">City</label>
+                        <input type="text" class="form-control" id="inputCity" [(ngModel)]="customer.City" name="customer.City" />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">State</label>
+                        <input type="text" class="form-control" id="inputState" [(ngModel)]="customer.State" name="customer.State" />
+                    </div>
+                    <div class="col-12">
+                        <br />
+                        <button type="submit" class="btn btn-primary" (click)="customerUpdate()">
+              Sign in
+            </button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+</div>

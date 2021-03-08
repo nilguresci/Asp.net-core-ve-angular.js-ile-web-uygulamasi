@@ -19,7 +19,7 @@ namespace SoftwareArge_Assignment.Models
 
         public string City { get; set; }
 
-        public string Town { get; set; }
+        public string State { get; set; }
 
         public string Adress { get; set; }
 

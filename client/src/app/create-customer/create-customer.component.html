@@ -1,0 +1,44 @@
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <form class="row g-3" (submit)="addCustomer()">
+                    <div class="col-md-6">
+                        <label for="firstname" class="form-label">Name</label>
+                        <input type="text" class="form-control" placeholder="First name" aria-label="First name" [(ngModel)]="customer.Name" name="customer.Name" />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastname" class="form-label">Last name</label>
+                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" [(ngModel)]="customer.Surname" name="customer.Surname" />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="FormControlTel">Telefon</label>
+                        <input type="tel" id="exampleInputTel" class="form-control" placeholder="5553332244" [(ngModel)]="customer.Phone" name="customer.Phone" />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" [(ngModel)]="customer.EmailAdress" name="customer.EmailAdress" />
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" [(ngModel)]="customer.Adress" name="customer.Adress" />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">City</label>
+                        <input type="text" class="form-control" id="inputCity" [(ngModel)]="customer.City" name="customer.City" />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">State</label>
+                        <input type="text" class="form-control" id="inputState" [(ngModel)]="customer.State" name="customer.State" />
+                    </div>
+                    <div class="col-12">
+                        <br />
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+</div>

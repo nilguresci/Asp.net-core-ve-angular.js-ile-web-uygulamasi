@@ -43,7 +43,9 @@ export class CustomerDetailsComponent implements OnInit {
 
   deleteCustomer(Id:number){
 this.CustomerList=this.CustomerList.filter((c) => c.Id !==Id);
+console.log(this.CustomerList)
     this.service.deleteCustomer(Id).subscribe();
+    this.refreshCustomerList();
     this.router.navigate([`/customers`]);
   }
 

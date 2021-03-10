@@ -1,25 +1,21 @@
-<div>
-    <div class="container" id="customerList">
-        <div class="row">
-            <div class="col"></div>
-            <div class="col" *ngFor="let item of CustomerList">
-                <div class="card" style="width: 18rem">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ item.Name }} {{ item.Surname }}</h5>
-                        <hr />
-                        <button type="button" class="btn btn-link" (click)="getCustomerWId(item.Id)">
-              Customer Details
-            </button>
-                        <br />
-                        <button type="button" class="btn btn-link" (click)="goUpdate(item.Id)">
-              Update
-            </button>
-                    </div>
+<div class="container" id="customerList">
+    <div class="row">
+        <div class="col-4" *ngFor="let item of CustomerList">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ item.Name }} {{ item.Surname }}</h5>
+                    <hr />
+                    <button type="button" class="btn btn-link" (click)="getCustomerWId(item.Id)">
+            Customer Details
+          </button>
+                    <br />
+                    <button type="button" class="btn btn-link" (click)="goUpdate(item.Id)">
+            Update
+          </button>
                 </div>
-                <br />
-                <br />
             </div>
-            <div class="col"></div>
+            <br />
+            <br />
         </div>
     </div>
 </div>

@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
 import {DotnetcoreService} from './services/dotnetcore.service';
 
 import {HttpClientModule} from '@angular/common/http';
@@ -15,6 +14,7 @@ import { CustomerDetailsComponent } from './customer-details/customer-details.co
 import { FooterComponent } from './footer/footer.component';
 import { CustomerUpdateComponent } from './customer-update/customer-update.component';
 import { CreateCustomerComponent } from './create-customer/create-customer.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 export function tokenGetter(){
   return localStorage.getItem("jwt");
@@ -23,13 +23,13 @@ export function tokenGetter(){
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     CustomerComponent,
     LoginComponent,
     CustomerDetailsComponent,
     FooterComponent,
     CustomerUpdateComponent,
-    CreateCustomerComponent
+    CreateCustomerComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

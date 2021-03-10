@@ -14,6 +14,7 @@ export class LoginComponent implements OnInit {
   constructor(private router:Router, private http:HttpClient) { }
 
   ngOnInit(): void {
+    
   }
 
   
@@ -24,14 +25,13 @@ export class LoginComponent implements OnInit {
     }
 
     this.http.post("https://localhost:5001/api/admin/login",credentials).subscribe(response =>{
-      
       const token=(<any>response).Token;
       localStorage.setItem("jwt",token);
       this.invalidLogin=false;
       this.router.navigate(['/customers']);
     }, err=>{
       this.invalidLogin=true;
-      this.router.navigate(['/customers']);
+      this.router.navigate(['']);
     })
   }
 
